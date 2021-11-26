@@ -1,14 +1,20 @@
+body {
+    background-color: dimgray;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header */
+
 .header {
     height: 60px;
     width: 100%;
     background-color: darkorange;
 }
 
-body {
-    background-color: dimgray;
-    margin: 0;
-    padding: 0;
-}
+
+/* Button for header */
 
 .btn {
     color: #fff;
@@ -22,10 +28,12 @@ body {
 }
 
 .btn:hover {
-    opacity: 1;
     color: floralwhite;
     border-color: whitesmoke;
 }
+
+
+/* Navigation parametrs */
 
 .navBar {
     height: 100%;
@@ -35,32 +43,76 @@ body {
     align-items: center;
 }
 
+
+/* Tier 2 dropdown menu */
+
 .dropMenu1 {
     padding: 0;
-    position: absolute;
-    left: 180px;
-    top: 50px;
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    line-height: 42px;
 }
 
-.navBar li {
+#serv {
+    position: absolute;
+    left: 217px;
+    top: 71px;
+}
+
+#about {
+    position: absolute;
+    left: 337px;
+    top: 71px;
+}
+
+.dropMenu1 li {
+    display: none;
+    position: relative;
+    top: 10px;
+}
+
+
+/* Tier 2 parametrs */
+
+.tierTwo {
     display: none;
     text-decoration: none;
     color: white;
-    margin-bottom: 32px;
     padding: 0;
-    margin-top: 15px;
-    min-width: 110px;
-    min-height: 10px;
     box-sizing: border-box;
+    display: block;
+    margin-bottom: 15px;
 }
 
-.navBar:hover>.dropMenu1 {
+.header .navBar li:hover li,
+.dropMenu1 {
     display: block;
     background-color: darkorange;
 }
 
-.navBar:hover>.dropMenu1>li {
-    display: block;
-    background-color: darkorange;
+
+/* Tier 3 dropdown menu */
+
+.dropMenu2 {
+    display: none;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    line-height: 42px;
 }
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+}
+
+
+/* .dropMenu2 li {
+    display: none;
+    position: relative;
+    top: 30px;
+    left: 500px;
+} */
