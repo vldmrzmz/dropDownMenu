@@ -65,6 +65,7 @@ ul {
 nav ul ul {
     display: none;
     padding: 0;
+
 }
 .navBar ul li:hover > ul {
     display: block;
@@ -74,7 +75,9 @@ nav ul ul {
     background-color: darkorange;
     list-style-type: none;
 }
-/* .navBar ul li ul li {
+.navBar ul ul ul li{
+    min-width: 100px;
     position: relative;
-    left: -20px;
-} */
+    left: -51px;
+    top: 60px;
+}
