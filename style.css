@@ -4,115 +4,77 @@ body {
     padding: 0;
 }
 
-
-/* Header */
-
-.header {
-    height: 60px;
-    width: 100%;
-    background-color: darkorange;
+p {
+    font-family:'Gill Sans', 'Gill Sans MT',
+     Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
 }
-
+h1 {
+    font-family:'Gill Sans', 'Gill Sans MT',
+     Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xxx-large;
+    margin-bottom: 0;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul {
+    list-style-type: none;
+}
+.list {
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 /* Button for header */
 
 .btn {
     color: #fff;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 23px;
+    font-family:'Gill Sans', 'Gill Sans MT',
+     Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26px;
     text-decoration: none;
     box-sizing: border-box;
-    padding: 15px 10px;
+    padding: 14px 10px;
     transition: .1s linear;
-    border: 2px solid darkorange;
+    display: block;
 }
 
 .btn:hover {
     color: floralwhite;
-    border-color: whitesmoke;
+    background-color:rgb(199, 74, 16);
 }
 
 
 /* Navigation parametrs */
 
 .navBar {
-    height: 100%;
+    height: 60px;
     width: 100%;
-    list-style-type: none;
     display: flex;
     align-items: center;
-}
-
-
-/* Tier 2 dropdown menu */
-
-.dropMenu1 {
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    line-height: 42px;
-}
-
-#serv {
-    position: absolute;
-    left: 217px;
-    top: 71px;
-}
-
-#about {
-    position: absolute;
-    left: 337px;
-    top: 71px;
-}
-
-.dropMenu1 li {
-    display: none;
-    position: relative;
-    top: 10px;
-}
-
-
-/* Tier 2 parametrs */
-
-.tierTwo {
-    display: none;
-    text-decoration: none;
-    color: white;
-    padding: 0;
-    box-sizing: border-box;
-    display: block;
-    margin-bottom: 15px;
-}
-
-.header .navBar li:hover li,
-.dropMenu1 {
-    display: block;
     background-color: darkorange;
 }
 
+/* Hovers */
 
-/* Tier 3 dropdown menu */
-
-.dropMenu2 {
+nav ul ul {
     display: none;
     padding: 0;
+}
+.navBar ul li:hover > ul {
+    display: block;
+    position:absolute;
+    top: 60px;
+    left: 185px;
+    background-color: darkorange;
     list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    line-height: 42px;
 }
-
-nav ul ul ul li {
+/* .navBar ul li ul li {
     position: relative;
-    top: -60px;
-    left: 170px;
-}
-
-
-/* .dropMenu2 li {
-    display: none;
-    position: relative;
-    top: 30px;
-    left: 500px;
+    left: -20px;
 } */
